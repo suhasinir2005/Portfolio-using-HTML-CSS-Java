@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>suha</title>
+    <title>Suha</title>
 
     <style>
         body {
@@ -17,12 +17,12 @@
 
         /* MAIN WHITE BLOCK */
         .about-container {
-            max-width: 800px;       /* controls width → gives left/right space */
-            margin: 40px auto;      /* centers the block */
+            max-width: 900px;
+            width: 90%;
+            margin: 40px auto;
             background: white;
             padding: 40px;
-            border-radius:0px;
-            border-style: none;
+            border-radius: 0px;
             text-align: center;
         }
 
@@ -42,89 +42,65 @@
 
         h1 {
             margin-top: 0;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
+
+        /* COMMON BOX STYLE */
         .small-box {
-    width: 150px;
-    padding: 15px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 20px auto;     /* keeps it centered */
-    transition: 0.3s;
-}
+            padding: 15px;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 100%;
+        }
 
-.small-box:hover {
-    background-color: lightgray;
-    transform: scale(1.05);
-}
+        .small-box:hover {
+            background-color: lightgray;
+            transform: scale(1.05);
+        }
 
-.box-link {
-    text-decoration: none;
-    color: black;
-}
-.small-box2{
-    width: 150px;
-    padding: 15px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 20px auto;     /* keeps it centered */
-    transition: 0.3s;
-}
+        .box-link {
+            text-decoration: none;
+            color: black;
+        }
 
-.small-box2:hover {
-    background-color: lightgray;
-    transform: scale(1.05);
-}
-
-.box-link2 {
-    text-decoration: none;
-    color: black;
-}
-.small-box3{
-    width: 150px;
-    padding: 15px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 20px auto;     /* keeps it centered */
-    transition: 0.3s;
-}
-
-.small-box3:hover {
-    background-color: lightgray;
-    transform: scale(1.05);
-}
-
-.box-link3{
-    text-decoration: none;
-    color: black;
-}
-.links{
+        /* THREE BOX GRID */
+        .links {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
-            padding-left: 5mm;
-            gap:5mm;
-            border-radius:10px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        /* ------------ MOBILE RESPONSIVE ------------ */
+        @media(max-width: 700px) {
+            .links {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-img {
+                width: 180px;
+                height: 220px;
+            }
+
+            .about-text {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <div class="about-container">
+        
         <h1>SUHASINI R</h1>
 
-        <img src="pic.jpg" class="profile-img"><br><br><br>
+        <img src="pic.jpg" class="profile-img"><br><br>
 
         <h2>About Me</h2>
 
@@ -134,16 +110,28 @@
             and creating energy-efficient smart systems. I enjoy building hands-on projects, learning new 
             technologies, and developing my skills in web development and AI tools. I’m from Chennai,
             and I’m always eager to grow, explore, and take up new challenges.
-        </p><BR><BR>
-    <HR>
-    <h3><I>Dive into my world of learning..!!</I></h3>
-    <div class="links">
-    <a href="edu.htm" class="box-link2" target="_blank">
-    <div class="small-box2">EDUCATION🎓 </div>
-    <a href="skill.htm" class="box-link" target="_blank">
-    <div class="small-box3"> SKILLS🛠️</div>
-    <a href="pr.htm" class="box-link3" target="_blank">
-    <div class="small-box"> MILESTONES🎯 </div>
+        </p>
+
+        <hr><br>
+
+        <h3><i>Dive into my world of learning..!!</i></h3>
+
+        <div class="links">
+
+            <a href="edu.htm" class="box-link" target="_blank">
+                <div class="small-box">EDUCATION 🎓</div>
+            </a>
+
+            <a href="skill.htm" class="box-link" target="_blank">
+                <div class="small-box">SKILLS 🛠️</div>
+            </a>
+
+            <a href="pr.htm" class="box-link" target="_blank">
+                <div class="small-box">MILESTONES 🎯</div>
+            </a>
+
+        </div>
+
     </div>
 
 </body>
