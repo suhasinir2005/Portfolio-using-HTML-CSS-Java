@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>education</title>
+    <title>Education</title>
+
     <style>
         body {
             background-image: url("img2.jpg");
@@ -13,33 +14,64 @@
             margin: 0;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
+
         .about-container {
-            max-width: 800px;       /* controls width → gives left/right space */
-            margin: 40px auto;      /* centers the block */
-            background:rgb(209, 226, 245);
+            max-width: 800px;
+            width: 90%;
+            margin: 40px auto;
+            background: rgb(209, 226, 245);
             padding: 40px;
-            border-radius:0px;
-            border-style: none;
-            color:black;}
-        .grade{
+            border-radius: 10px;
+            color: black;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .grade {
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color:steelblue;
+            color: steelblue;
+        }
+
+        /* ---------- MOBILE RESPONSIVE ---------- */
+        @media (max-width: 600px) {
+
+            .about-container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            h4 {
+                font-size: 15px;
+            }
         }
     </style>
 </head>
+
 <body>
-      <div class="about-container">
-      <center><h1> EDUCATION🎓  </h1></center><br><br>
-      <hr>
-     <h3> B.E. in Electrical and Electronics Engineering<br>Rajalakshmi Engineering College, Chennai<br></h3>
-     <h4 class="grade">CGPA: 8.62 | Expected Graduation: May 2027 | </h4>
-     <hr>
-     <h3>Higher Secondary (Class XII)<br>Chinmaya Vidyalaya Avadi, Chennai<br></h3>
-     <h4 class="grade"> Percentage: 94% | Year: 2023 |</h4>
-     <hr>
-     <h3>Secondary (Class X)<br>Velammal Vidhyashram Surapet, Chennai <br></h3>
-     <h4 class="grade"> Percentage: 91.8% | Year: 2021 </h4>
-     <hr>
-      </div>
+    <div class="about-container">
+        <center><h1> EDUCATION 🎓 </h1></center><br>
+        <hr>
+
+        <h3>B.E. Electrical and Electronics Engineering<br>Rajalakshmi Engineering College, Chennai</h3>
+        <h4 class="grade">CGPA: 8.62 | Expected Graduation: 2027</h4>
+        <hr>
+
+        <h3>Higher Secondary (Class XII)<br>Chinmaya Vidyalaya Avadi, Chennai</h3>
+        <h4 class="grade">Percentage: 94% | Year: 2023</h4>
+        <hr>
+
+        <h3>Secondary (Class X)<br>Velammal Vidhyashram Surapet, Chennai</h3>
+        <h4 class="grade">Percentage: 91.8% | Year: 2021</h4>
+        <hr>
+    </div>
 </body>
 </html>
