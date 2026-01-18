@@ -20,6 +20,7 @@ Clean and simple UI
 
 Well-structured content sections
 
+
 🎯 Purpose
 
 This project was created to strengthen my front-end development fundamentals, including:
@@ -29,6 +30,7 @@ Web page structure
 Styling and layout design
 
 
+📌 Note
+
 This project reflects my learning progress during the training program and will be improved further as I gain more experience.
 
-If you want, I can also:
